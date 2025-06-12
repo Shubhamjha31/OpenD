@@ -66,10 +66,6 @@ The platform showcases how smart contracts, custom tokens, and NFTs can work tog
 
 ---
 
-## 📸 Screenshots (Coming Soon)
-
----
-
 ## 🔗 Related Projects
 
 - 🪙 [DSJ Token – Fungible Token System](https://github.com/Shubhamjha31/DSJ-Token)
