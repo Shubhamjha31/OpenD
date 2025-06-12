@@ -105,7 +105,7 @@ actor OpenD {
         return listing.itemPrice;
     };
 
-    public shared(msg) func completePurchase(id: Principal, ownerId: Principal, newOwnerId: Principal): async Text {
+    public shared(_msg) func completePurchase(id: Principal, ownerId: Principal, newOwnerId: Principal): async Text {
         var purchasedNFT: NFTActorClass.NFT = switch (mapOfNFTs.get(id)){
             case null return "NFT does not exist";
             case (?result) result;
