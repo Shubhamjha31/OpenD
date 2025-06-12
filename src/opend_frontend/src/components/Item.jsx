@@ -81,7 +81,7 @@ function Item(props) {
   function handleSell() {
     console.log("Sell button clicked");
     setPriceInput(<input
-        placeholder="Price in DANG"
+        placeholder="Price in DSJ"
         type="number"
         className="price-input"
         value={price}
@@ -98,7 +98,7 @@ function Item(props) {
     console.log("Sell price is: " + price);
     const listingResult = await opend_backend.listItem(props.id, Number(price));
     console.log("Sell result: ", listingResult);
-    if(listingResult == "Succes") {
+    if(listingResult == "Success") {
       const opendId = await opend_backend.getOpenDCanisterId();
       const transferResult = await NFTActor.transferOwnerShip(opendId);
       console.log("Transfer result: ", transferResult);
